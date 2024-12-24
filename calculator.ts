@@ -16,7 +16,7 @@ const calculator = (a: number, b: number, op: Operation): number => {
 
 try {
   console.log(calculator(1, 5, 'divide'));
-} catch(error: unknown) {
+} catch(error: unknown) { // `unknown` is like `any`. anything is assignable to `unknown`, but it isn't assignable to anything
   let errorMessage = 'Something went wrong: '
 
   if (error instanceof Error) {
