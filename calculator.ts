@@ -19,6 +19,7 @@ try {
 } catch(error: unknown) { // `unknown` is like `any`. anything is assignable to `unknown`, but it isn't assignable to anything
   let errorMessage = 'Something went wrong: '
 
+  // this method is called Type Narrowing. narrowing `unknown` type to `Error` type 
   if (error instanceof Error) {
     errorMessage += error.message;
   }
